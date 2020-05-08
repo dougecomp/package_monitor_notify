@@ -1,0 +1,25 @@
+{
+  "name": "job-package-tracker-push-notification",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:server": "nodemon src/server.js",
+    "dev:queue": "nodemon src/queue.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bull": "^3.13.0",
+    "bull-board": "^0.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "expo-server-sdk": "^3.5.0",
+    "express": "^4.17.1",
+    "package-tracker-ptbr": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "npm-run-all": "^4.1.5",
+    "sucrase": "^3.13.0"
+  }
+}
